@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title> Director Comercial | Alejandro Flores</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+</head>
+
+<body class="destination">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="imagenes/Logo blanco.svg" alt="diferenciarte logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="perfil.html"><span aria-hidden="true">DC</span>Alex</a></li>
+            <li ><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="http://diferenciarte.net/"><span aria-hidden="true"></span>Diferenciarte</a></li>
+            <li ><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="https://calendar.app.google/juXP3Cn2b8kxu77a9"><span aria-hidden="true"></span>Agenda</a></li>
+           
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title "><span aria-hidden="true"> Publicidad en</span> <em class="uppercase"> Movimiento</em></h1>
+    
+    <picture id="perfil-image">
+      <source src="imagenes/foto-perfil.webp" type="image/webp">
+      <img src="imagenes/foto-perfil.png" alt="foto de perfil Alejandro flores">
+    </picture>
+    <picture hidden id="diferenciarte-image">
+      <source src="imagenes/trasnporte urbano.webp" type="image/webp">
+      <img src="imagenes/trasnporte urbano.png" alt="foto de camion con publicidad de diferenciarte en la ciudad">
+    </picture>
+    <picture hidden id="metrobus-image">
+      <source src="imagenes/metrobus.webp" type="image/webp">
+      <img src="imagenes/metrobus.png" alt="foto interior del metrobus con publicidad">
+    </picture>
+    <picture hidden id="mediakit-image">
+      <source src="imagenes/media kit.webp" type="image/webp">
+      <img src="imagenes/media kit.png" alt="imagen de camion con publicidad y texto que dice media kit 2025">
+    </picture>
+    
+    
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" aria-controls="perfil-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="perfil-image">Director Comercial</button>
+        <button aria-selected="false" role="tab" aria-controls="diferenciarte-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="diferenciarte-image">Diferenciarte</button>
+        <button aria-selected="false" role="tab" aria-controls="metrobus-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="metrobus-image">Metrobús</button>
+        <button aria-selected="false" role="tab" aria-controls="mediakit-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mediakit-image">Media Kit</button>
+    </div>
+
+    <!-- perfil -->
+    <article class="destination-info flow" id="perfil-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-600 uppercase ff-serif">Alejandro Flores Álvarez</h2>
+
+      <p>Dirigir, desarrollar y ejecutar la estrategia comercial de Diferenciarte para posicionar a la empresa como líder en publicidad exterior móvil,asegurando el cumplimiento de objetivos de venta, rentabilidad yexpansión. Responsable de la gestión de clientes clave, alianzas estratégicas y el fortalecimiento del equipo de ventas para garantizar un crecimiento rentable y sostenido.</p>
+      
+      
+    </article>
+    
+    <!-- diferenciarte -->
+    <article hidden class="destination-info flow" id="diferenciarte-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-600 uppercase ff-serif">Transporte Urbano</h2>
+
+      <ul class="fs-400">
+        <li>DiferenciArte supera a los promedios de la industria OOH en impactos mensuales, alcanzando más de 4.6 millones de personas al mes, en comparación con la mediana de 1.8 millones vs medios móviles.</li>
+        <li>Nuestras campañas ofrecen mayor nivel de frecuencia gracias al número de recorridos diarios que hacen nuestras rutas, asegurando una exposición amplia y continua.</li>
+        <li>Logramos hasta 90 minutos de impacto constante. proporcionando un tiempo de exposición prolongado. Esto permite captar a una audiencia cautiva y maximizar la retención del mensaje publicitario.</li>
+      </ul>
+      
+     
+    </article>
+    
+    <!-- metrobus -->
+    <article hidden class="destination-info flow" id="metrobus-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-600 uppercase ff-serif">Líneas Exclusivas</h2>
+
+      <p>Aprovecha el poder de la movilidad urbana para posicionar tu marca en uno de los sistemas de transporte más utilizados de la Ciudad de México. Las dovelas interiores del Metrobús te permiten comunicar tu mensaje directamente a un público cautivo, durante trayectos diarios de 40 a 60 minutos.</p>
+      
+    </article>
+    
+    <!-- Titan -->
+    <article hidden class="destination-info flow" id="mediakit-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-600 uppercase ff-serif">Media kit 2025</h2>
+
+      <p>Conoce todo lo que podemos hacer por tu marca en movimiento.Accede a nuestras tarifas, alcances por línea, formatos disponibles y casos de éxito en una presentación clara, actualizada y lista para ayudarte a tomar decisiones estratégicas. 
+      <p>Haz clic aquí y descarga el Media Kit 2025</p> 
+      
+
+  <a href="#" class="btn">Media Kit</a>
+      
+      
+    </article>
+  </main>
+  <footer>
+  <div id="social-icons" class="social-icons">
+            <a href="https://www.linkedin.com/in/alexfloresalv/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://calendar.app.google/juXP3Cn2b8kxu77a9"><i class="fa-regular fa-calendar"></i></a>
+            <a href="https://wa.link/xdebri"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:alex.flores@diferenciarte.com.mx"><i class="fa-solid fa-paper-plane"></i></a>
+            
+  </div>
+  
+  </footer>
+  
+</body>
+
+
+</html>
