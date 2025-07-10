@@ -5,14 +5,14 @@
 :root {
     /* colors */
     --clr-dark: 230 35% 7%;
-    --clr-light: 208 100% 50%;
+    --clr-light: 204 100% 46.3%;
     --clr-white: 0 0% 100%;
     
     /* font-sizes */
     --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
     --fs-800: 3.5rem;
     --fs-700: 1.5rem;
-    --fs-600: 1rem;
+    --fs-600: 1.5rem;
     --fs-500: 1rem;
     --fs-400: 0.9375rem;
     --fs-300: 1rem;
@@ -228,13 +228,14 @@ select {
 .numbered-title {
     font-family: var(--ff-serif);
     font-size: var(--fs-500);
-    letter-spacing: 4.72px; 
+    color: hsl( var(--clr-light) );
+    letter-spacing: 5px; 
+    font-weight: 700;
 }
 
 .numbered-title span {
     margin-right: .5em;
-    font-weight: 700;
-    color: hsl( var(--clr-white) / .25);
+    color: hsl( var(--clr-white) / .7);
 }
 
 
@@ -618,7 +619,7 @@ footer{
     }
 }
 
- /* Mobile-specific adjustments */
+  /* Mobile-specific adjustments */
     @media (max-width: 768px) {
       .grid-container--destination {
         grid-template-columns: 1fr;
@@ -633,8 +634,10 @@ footer{
       
       .tab-list button {
         flex: 1 0 calc(50% - 1rem);
-        font-size: 0.7rem;
+        font-size: .9rem;
+        font-weight: 600;
         padding: 0.5rem;
         white-space: normal;
         text-align: center;
       }
+    }
