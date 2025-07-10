@@ -17,6 +17,14 @@
   <title> Director Comercial | Alejandro Flores</title>
   <script src="navigation.js" defer></script>
   <script src="tabs.js" defer></script>
+
+  <!-- Password -->
+  <script>
+    const password = prompt("Ingresa la contraseña:");
+    if (password !== "DiferenciArte") {
+      document.body.innerHTML = "Acceso denegado";
+    }
+  </script>
 </head>
 
 <body class="destination">
